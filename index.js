@@ -3,12 +3,14 @@ const express = require('express')
 
 // const session = require('express-session')
 // var memeorystore = require('memorystore')(session)
+const cors = require('cors')
 
 const app = express()
 
 
 // middleware
 app.use(express.json())
+app.use(cors())
 
 const priceToProductMap = {
     basicMonthly: "price_1LoMhzFOlrjAHlmzpSvyrxNX",
