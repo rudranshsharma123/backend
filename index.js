@@ -1,4 +1,4 @@
-const cors = require('cors')
+
 const express = require('express')
 const Stripe = require('./stripe')
 // const session = require('express-session')
@@ -9,7 +9,6 @@ const app = express()
 
 // middleware
 app.use(express.json())
-app.use(cors())
 
 const priceToProductMap = {
     basicMonthly: "price_1LoMhzFOlrjAHlmzpSvyrxNX",
